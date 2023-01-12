@@ -1,0 +1,44 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+// font-family: 'Archivo Black', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
+.bg-primary {
+  background-color: #203572;
+}
+
+.bg-secondary {
+  background-color: #3FC7DF;
+}
+
+.text-primary{
+  color: #203572;
+}
+.text-secondary{
+  color: #3FC7DF;
+}
+.text-black{
+  color: #000033;
+}

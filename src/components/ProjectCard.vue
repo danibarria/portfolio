@@ -1,11 +1,11 @@
 <template>
-  <q-card class="my-card">
+  <q-card class="card col-md-3 col-sm-12 col-xs-11">
     <q-parallax
-      :src="img"
-      :speed="0.9"
-      :height="300"
+      :speed="0.8"
     >
-
+      <template v-slot:media>
+        <slot name="parallax"></slot>
+      </template>
     </q-parallax>
     <q-card-section>
       <div class="text-h6">{{ title }}</div>
@@ -25,7 +25,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-* {
-  color: #00004F;
+// * {
+//   color: #00004F;
+// }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    // width: 20%;
+  }
 }
 </style>
