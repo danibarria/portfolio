@@ -4,36 +4,11 @@
       <div class="title">DANI BARRÍA</div>
       <div class="text-white my-position ma-0 pb-10 px-15">FULLSTACK DEVELOPER</div>
     </header>
-      <!-- INITIAL -->
-      <main class="q-pa-md">
-        <article class="container">
-          <div class="two-items">
-            <div class="item">
-              <div class="subtitles text-secondary q-px-none ">CONTACT</div>
-                <div v-for="contact in contacts" :key="contact" class="text-black">{{ contact }}</div>
-            </div>
-            <div class="item q-mt-xs">
-              <div class="subtitles text-secondary q-px-none">SOCIAL NETWORKS</div>
-              <a v-for="(url, urlIndex) in socialNetworks" style="display:block" :key="urlIndex" :href="`https://${url}`" target="_blank" rel="noopener noreferrer">{{ url }}</a>
-            </div>
-          </div>
-          <div class="item">
-            <div class="subtitles text-secondary q-px-none">TECHNOLOGIES</div>
-              <div v-for="tech in technologies" :key="tech" class="text-black">{{ tech }}</div>
-          </div>
-        </article>
-      </main>
-      <!-- LATEST PROJECTS -->
+
+      <!-- about me -->
       <section class="q-pa-md">
-        <div class="section bg-primary text-secondary q-mb-md q-py-md q-px-sm">LATEST PROJECTS</div>
-        <work-done
-          class="q-mb-xl"
-          v-for="(project, id) in projects"
-          :key="id"
-          :title="project.title"
-          :description="project.description"
-          :imgName="project.imgSrc"
-        />
+        <div class="section bg-primary text-secondary q-mb-md q-py-md q-px-sm">ABOUT ME</div>
+        <div class="story text-black text-justify q-pl-sm q-pr-md">{{ myStory }}</div>
       </section>
       <!-- Work Experience -->
       <section class="q-pa-md">
@@ -53,23 +28,32 @@
           <div v-for="(learning,j) in education.learnings" :key="'learning'+ learning + i*(1+j)" class="text-black">{{ learning }}</div>
         </div>
       </section>
-      <!-- about me -->
-      <section class="q-pa-md">
-        <div class="section bg-primary text-secondary q-mb-md q-py-md q-px-sm">ABOUT ME</div>
-        <div class="story text-black text-justify q-pl-sm q-pr-md">{{ myStory }}</div>
+            <!-- INITIAL -->
+      <section class="q-px-lg">
+        <article class="container">
+            <div class="item">
+              <div class="subtitles text-secondary q-px-none ">CONTACT</div>
+                <div v-for="contact in contacts" :key="contact" class="text-black">{{ contact }}</div>
+            </div>
+            <div class="item q-mt-xs">
+              <div class="subtitles text-secondary q-px-none">SOCIAL NETWORKS</div>
+              <a v-for="(url, urlIndex) in socialNetworks" style="display:block" :key="urlIndex" :href="`https://${url}`" target="_blank" rel="noopener noreferrer">{{ url }}</a>
+            </div>
+          <div class="item">
+            <div class="subtitles text-secondary q-px-none">TECHNOLOGIES</div>
+              <div v-for="tech in technologies" :key="tech" class="text-black">{{ tech }}</div>
+          </div>
+        </article>
       </section>
   </span>
 </template>
 
 <script>
-import WorkDone from '../components/WorkDone'
 import data from './mixin';
 export default {
   name: 'Mobile',
   mixins: [data],
-  components: {
-    WorkDone
-  }
+
 }
 </script>
 
@@ -110,8 +94,9 @@ h1,h2,h3 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     column-gap: 15px;
+    row-gap: 15px;
 }
 .image {
     width: 100%;

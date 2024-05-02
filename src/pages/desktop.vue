@@ -8,54 +8,19 @@
       <div class="title">REYES</div>
 
       <div class="text-white my-position">FULLSTACK DEVELOPER</div>
+      <!-- about me -->
+      <div class="subtitles bg-primary text-secondary">ABOUT ME</div>
+      <div class="story text-white text-justify">{{ myStory }}</div>
 
       <!-- contact -->
         <div class="subtitles text-secondary q-px-none ">CONTACT</div>
         <div v-for="contact in contacts" :key="contact" class="text-white">{{ contact }}</div>
 
-      <!-- technologies -->
-      <div class="subtitles text-secondary q-px-none">TECHNOLOGIES</div>
-      <div v-for="tech in technologies" :key="tech" class="text-white">{{ tech }}</div>
 
-      <!-- about me -->
-      <div class="subtitles bg-primary text-secondary">ABOUT ME</div>
-        <div class="story text-white text-justify">{{ myStory }}</div>
       </header>
     <main class="content">
       <!-- parte derecha -->
       <q-scroll-area style="width: 100%; height: 100%;">
-        <div class="row-1">
-
-          <!-- latest projects -->
-          <section class="q-pa-md">
-            <div class="section bg-primary text-secondary q-mb-md q-py-md q-px-sm">LATEST PROJECTS</div>
-            <q-carousel
-              v-model="slide"
-              transition-prev="jump-right"
-              transition-next="jump-left"
-              swipeable
-              animated
-              control-color="white"
-              prev-icon="arrow_left"
-              next-icon="arrow_right"
-              padding
-              arrows
-              class="bg-black text-white shadow-1 "
-            >
-              <q-carousel-slide v-for="(project, id) in projects" :key="id" :name="project.title" class="column no-wrap flex-center">
-              <work-done
-                class="card"
-                :title="project.title"
-                :description="project.description"
-                :imgName="project.imgSrc"
-              />
-              </q-carousel-slide>
-            </q-carousel>
-            <div class="cards">
-
-            </div>
-          </section>
-        </div>
         <div class="row-2 q-pa-md">
           <!-- work experience -->
           <section>
@@ -80,6 +45,12 @@
               <div class="section bg-primary text-secondary q-mb-md q-py-md q-px-sm">SOCIAL NETWORKS</div>
               <a class="q-mb-md q-px-sm" v-for="(url, urlIndex) in socialNetworks" style="display:block" :key="urlIndex" :href="`https://${url}`" target="_blank" rel="noopener noreferrer">https://{{ url }}</a>
           </section>
+
+          <!-- technologies -->
+          <section>
+              <div class="section bg-primary text-secondary q-mb-md q-py-md q-px-sm">TECHNOLOGIES</div>
+              <div v-for="tech in technologies" :key="tech" class="">{{ tech }}</div>
+          </section>
         </div>
       </q-scroll-area>
     </main>
@@ -87,14 +58,10 @@
 </template>
 
 <script>
-import WorkDone from '../components/WorkDone'
 import data from './mixin';
 export default {
   name: 'Desktop',
   mixins: [data],
-  components: {
-    WorkDone
-  },
   data() {
     return {
       slide: 'Crypto'
