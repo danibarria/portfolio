@@ -1,16 +1,133 @@
 ---
+import Layout from '../layouts/Layout.astro';
+
+const selectedWork = [
+  {
+    title: 'MotherDuck — AI Video Pipeline',
+    body: "Built an automated pipeline that takes MotherDuck's YouTube uploads, transcribes them with OpenAI Whisper, translates the transcripts, and publishes them straight into Strapi — all in Python. Removed a fully manual step from the content workflow.",
+  },
+  {
+    title: 'MotherDuck — Dependency Security Campaign',
+    body: 'Reduced security advisories from 317 to 124 (zero critical) across the monorepo with no regressions. Also built a Strapi link checker that caught 264 real broken links and cut check time from 4 minutes to 33 seconds.',
+  },
+  {
+    title: 'Ampersand — Site Relaunch',
+    body: 'Shipped ampersand.ai end-to-end as lead engineer on the Astro rebuild — PostHog and GTM instrumented with a pre-launch baseline, plus the final site-wide QA sweep. Backed the Phase 2 estimate with measured velocity, and got 71% of legacy URLs redirected 1:1 to the new docs.',
+  },
+  {
+    title: 'CodSpeed — Homepage v2 & SEO',
+    body: 'Led the Next.js App Router rebuild and owned SEO, GEO, and AEO: dynamic OG images, sitemap, robots, and structured data for AI-crawler visibility.',
+  },
+  {
+    title: 'LiteDesigner — AI Tooling Kickoff',
+    body: "Kicked off an internal MCP server for Litebox's design team to capture and reuse website references, straight from Claude. Built the backend, auth, and a working 0.1 frontend with the core flow: Next.js, Neon/Drizzle, Better Auth, and an AWS worker for automated site capture. Now in active development, with the team building on top of that foundation — including code review I keep doing on incoming PRs.",
+  },
+  {
+    title: 'imetriq — Metrics Platform (Backend-led)',
+    body: 'Lead builder of an ad-metrics and alerting platform: a Next.js app plus an internal NestJS service querying BigQuery and MongoDB, deployed via Docker to AWS. Owned the product and its build/deploy infrastructure end-to-end.',
+  },
+  {
+    title: 'DrLullaby — Full-Stack Across Three Languages',
+    body: 'Full-stack + DevOps on a sleep-health platform: features across a Vue 2 frontend, a NestJS backend, and a legacy Spring Boot (Java) service — plus CI/CD to EC2 and migrating secrets to AWS Secrets Manager. One engagement, three different stacks.',
+  },
+  {
+    title: 'Time Tracking Bot — Internal Automation',
+    body: 'Built a Slack-based internal tool used by the whole agency: interactive forms that write time entries into Runn, with calendar integration. NestJS backend, Dockerized and deployed to AWS ECS Fargate via CI/CD.',
+  },
+  {
+    title: 'SEO Crawler (Go) — Technical Oversight',
+    body: 'Ongoing code review and technical judgment call on a Go-based SEO crawler service — reviewing incoming PRs, flagging edge cases, and keeping quality high on a codebase outside my day-to-day stack.',
+  },
+];
+
+const personalBuilds = [
+  {
+    title: 'Self-Hosted Infrastructure & AI Platform',
+    body: 'A homelab running 15+ Dockerized services — Home Assistant, Immich, Jellyfin, Syncthing, AdGuard Home, qBittorrent — behind a full observability stack (Prometheus, Grafana, node_exporter, cAdvisor) and secure remote/public access via Tailscale and Cloudflare Tunnel. It also runs local AI inference: open-source LLMs served via Ollama on a dedicated GPU box (RTX 3060, 12GB VRAM), powering a self-hosted AI agent end-to-end.',
+  },
+  {
+    title: 'AI Second Brain',
+    body: 'A personal knowledge system: an Obsidian vault auto-populated from 40+ repos, Slack, and Notion, mirrored to a self-hosted agent via MCP. A Telegram-based AI agent — running on the same homelab, using the local Ollama models above — runs daily check-ins against it, with secure remote access via Tailscale. An end-to-end personal AI-first system, built and operated solo.',
+  },
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <main class="mx-auto max-w-2xl px-6 py-20 sm:py-28">
+    <!-- HERO -->
+    <section class="mb-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-4">Daniel Barría</p>
+      <h1 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">
+        Tech Lead building toward Growth Engineering
+      </h1>
+      <p class="text-lg text-muted leading-relaxed max-w-xl">
+        I build full-stack systems for devtools & AI startups — backend infrastructure, AI pipelines, and the growth instrumentation that turns a site into a system teams can measure and ship on.
+      </p>
+      <div class="mt-8 flex gap-6 font-mono text-sm">
+        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-ink underline decoration-line underline-offset-4 hover:decoration-accent">LinkedIn</a>
+        <a href="#contact" class="text-ink underline decoration-line underline-offset-4 hover:decoration-accent">Contact</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="mb-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-5">About</p>
+      <p class="text-base leading-relaxed max-w-xl">
+        I'm a Tech Lead at Litebox, where I've spent 6 years leading full-stack web platform and growth engineering for devtools and AI companies — MotherDuck, CodSpeed, Ampersand, and ~10 other client accounts since 2023. I've built backend services end-to-end (NestJS, MongoDB, BigQuery, Spring Boot), shipped a Python/AI pipeline, and led growth instrumentation across a dozen production sites. I think of myself as an engineer rather than a programmer: I move across stacks as needed — Node, Python, Java, Go — and increasingly, I bring that experience to bear curating and reviewing AI-generated code, not just writing my own.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="mb-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-5">Experience</p>
+      <div class="border-t border-line pt-5">
+        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 mb-2">
+          <h3 class="font-serif text-xl">Tech Lead — Litebox</h3>
+          <span class="font-mono text-xs text-muted">2020 — Present</span>
+        </div>
+        <p class="text-muted leading-relaxed max-w-xl">
+          Leading full-stack web platform engineering for devtools & AI startups. Technical Leader for MotherDuck (since 2023, the agency's largest account) and Ampersand; technical support for CodSpeed. Led ~10 client engagements since 2023 spanning frontend, backend, infra, and growth. Also run technical hiring assessments and AI-assisted performance reviews for the engineering team.
+        </p>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="mb-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-5">Selected Work</p>
+      <div class="flex flex-col divide-y divide-line border-t border-line">
+        {selectedWork.map((item) => (
+          <div class="py-5">
+            <h3 class="font-serif text-lg mb-1.5">{item.title}</h3>
+            <p class="text-muted leading-relaxed max-w-xl text-sm">{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- PERSONAL BUILDS -->
+    <section class="mb-20">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-5">Personal Builds</p>
+      <div class="flex flex-col divide-y divide-line border-t border-line">
+        {personalBuilds.map((item) => (
+          <div class="py-5">
+            <h3 class="font-serif text-lg mb-1.5">{item.title}</h3>
+            <p class="text-muted leading-relaxed max-w-xl text-sm">{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="pt-4 border-t border-line">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-5">Contact</p>
+      <p class="text-base leading-relaxed max-w-xl mb-6">
+        Open to growth engineering and full-stack platform leadership roles at devtools & AI startups.
+      </p>
+      <div class="flex flex-wrap gap-6 font-mono text-sm">
+        <a href="mailto:barriareyesjosedaniel@gmail.com?subject=Let%27s%20talk%20%E2%80%94%20via%20your%20portfolio" class="text-accent hover:underline">Email ↗</a>
+        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent hover:underline">LinkedIn ↗</a>
+        <a href="https://danibarria.com.ar" class="text-accent hover:underline">danibarria.com.ar ↗</a>
+      </div>
+    </section>
+  </main>
+</Layout>
