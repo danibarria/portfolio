@@ -4,11 +4,11 @@
   --font-serif: "Newsreader", serif;
   --font-sans: "Inter", sans-serif;
 
-  --color-paper: #FAF6EF;
-  --color-ink: #1C1A17;
-  --color-muted: #6B6459;
-  --color-line: #E4DCCC;
-  --color-accent: #B5502C;
+  --color-paper: #F3F3F0;
+  --color-ink: #141310;
+  --color-muted: #5C584F;
+  --color-line: #E3E1D9;
+  --color-accent: #1F5C52;
 }
 
 html {

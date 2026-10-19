@@ -1,0 +1,1386 @@
+{
+ "url": "http://localhost:4321/",
+ "at": "2026-10-19T13:01:37.096Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.18,
+    0.16,
+    0.27,
+    0.24,
+    0.56
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4165,
+     "screens": 4.6,
+     "words": 742,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Tech Lead → Growth Engineer",
+     "words": 5,
+     "chars": 27,
+     "lines": 2,
+     "size": 72,
+     "vw": 5,
+     "font": "Newsreader-cbc23bb3cb13a7f6",
+     "weight": 400,
+     "tracking": -0.025,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.43,
+     "top": 112,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Tech Lead → Growth Engineer",
+     "words": 5,
+     "lines": 2,
+     "size": 72,
+     "font": "Newsreader-cbc23bb3cb13a7f6"
+    },
+    "headings": [
+     {
+      "text": "Tech Lead → Growth Engineer",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.43,
+      "top": 112,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's talk.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 48,
+      "vw": 3.3,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.43,
+      "top": 3870,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter-b680a9382208a09f",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Newsreader-cbc23bb3cb13a7f6",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      18,
+      20,
+      24,
+      48,
+      72
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter-b680a9382208a09f",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.7
+     },
+     "measureChars": 64,
+     "max": {
+      "size": 72,
+      "vw": 5,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "text": "Tech Lead → Growth Engineer"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f3f0",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#141310",
+       "top": 3774,
+       "hsl": {
+        "h": 45,
+        "s": 0.11,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#141310",
+       "share": 0.96
+      },
+      {
+       "color": "#f2f2f0",
+       "share": 0.02
+      },
+      {
+       "color": "#f3f3f0",
+       "share": 0.01
+      },
+      {
+       "color": "#5c584f",
+       "share": 0
+      },
+      {
+       "color": "#1f5c52",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#141310",
+      "hsl": {
+       "h": 45,
+       "s": 0.11,
+       "l": 0.07
+      },
+      "fg": "#f3f3f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in touch"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": null,
+    "fontsLoaded": [
+     "newsreader-cbc23bb3cb13a7f6",
+     "inter-b680a9382208a09f"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4165,
+    "margins": {
+     "left": 408,
+     "right": 423
+    },
+    "sections": [],
+    "gaps": [
+     {
+      "top": 3564,
+      "height": 312
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Tech Lead → Growth Engineer",
+      "size": 72,
+      "top": 112,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 408,
+      "n": 33
+     }
+    ],
+    "leftBlocks": 33,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.25,
+    "voidBox": {
+     "x": 1020,
+     "y": 120,
+     "w": 420,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.43,
+    0.41,
+    0.41,
+    0.54,
+    0.58
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4165,
+     "screens": 4.1,
+     "words": 742,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Tech Lead → Growth Engineer",
+     "words": 5,
+     "chars": 27,
+     "lines": 2,
+     "size": 72,
+     "vw": 9.4,
+     "font": "Newsreader-cbc23bb3cb13a7f6",
+     "weight": 400,
+     "tracking": -0.025,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.81,
+     "top": 112,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Tech Lead → Growth Engineer",
+     "words": 5,
+     "lines": 2,
+     "size": 72,
+     "font": "Newsreader-cbc23bb3cb13a7f6"
+    },
+    "headings": [
+     {
+      "text": "Tech Lead → Growth Engineer",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 72,
+      "vw": 9.4,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 112,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's talk.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 48,
+      "vw": 6.3,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 3870,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter-b680a9382208a09f",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Newsreader-cbc23bb3cb13a7f6",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      18,
+      20,
+      24,
+      48,
+      72
+     ],
+     "sizeCount": 6,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter-b680a9382208a09f",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.7
+     },
+     "measureChars": 64,
+     "max": {
+      "size": 72,
+      "vw": 9.4,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "text": "Tech Lead → Growth Engineer"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f3f0",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#141310",
+       "top": 3774,
+       "hsl": {
+        "h": 45,
+        "s": 0.11,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#141310",
+       "share": 0.96
+      },
+      {
+       "color": "#f2f2f0",
+       "share": 0.02
+      },
+      {
+       "color": "#f3f3f0",
+       "share": 0.01
+      },
+      {
+       "color": "#5c584f",
+       "share": 0
+      },
+      {
+       "color": "#1f5c52",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#141310",
+      "hsl": {
+       "h": 45,
+       "s": 0.11,
+       "l": 0.07
+      },
+      "fg": "#f3f3f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in touch"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": null,
+    "fontsLoaded": [
+     "newsreader-cbc23bb3cb13a7f6",
+     "inter-b680a9382208a09f"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4165,
+    "margins": {
+     "left": 72,
+     "right": 87
+    },
+    "sections": [
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 112,
+      "height": 379,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tech Lead → Growth Engineer",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 72,
+      "right": 87,
+      "textLeft": 72,
+      "textRight": 87,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 587,
+      "height": 345,
+      "words": 108,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 123,
+      "textLeft": 72,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 1027,
+      "height": 293,
+      "words": 70,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 72,
+      "textLeft": 72,
+      "textRight": 72,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 1416,
+      "height": 1566,
+      "words": 411,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Work",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 121,
+      "textLeft": 72,
+      "textRight": 121,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 3078,
+      "height": 488,
+      "words": 143,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Personal Builds",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 122,
+      "textLeft": 72,
+      "textRight": 122,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.bg-ink.text-paper",
+      "tag": "section",
+      "top": 3774,
+      "height": 391,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's talk.",
+       "size": 48,
+       "tag": "h2"
+      },
+      "left": 72,
+      "right": 166,
+      "textLeft": 72,
+      "textRight": 166,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 3564,
+      "height": 312
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Tech Lead → Growth Engineer",
+      "size": 72,
+      "top": 112,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 72,
+      "n": 33
+     }
+    ],
+    "leftBlocks": 33,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.58,
+    0.63,
+    0.6,
+    0.58,
+    0.55,
+    0.58,
+    0.71
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5393,
+     "screens": 6.4,
+     "words": 742,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Tech Lead → Growth Engineer",
+     "words": 5,
+     "chars": 27,
+     "lines": 2,
+     "size": 36,
+     "vw": 9.2,
+     "font": "Newsreader-cbc23bb3cb13a7f6",
+     "weight": 400,
+     "tracking": -0.025,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.88,
+     "top": 80,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Tech Lead → Growth Engineer",
+     "words": 5,
+     "lines": 2,
+     "size": 36,
+     "font": "Newsreader-cbc23bb3cb13a7f6"
+    },
+    "headings": [
+     {
+      "text": "Tech Lead → Growth Engineer",
+      "words": 5,
+      "chars": 27,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 80,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 532,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Experience",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1206,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Selected Work",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1740,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Personal Builds",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.33,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4088,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Let's talk.",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5084,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Inter-b680a9382208a09f",
+       "share": 0.9,
+       "mono": false
+      },
+      {
+       "family": "Newsreader-cbc23bb3cb13a7f6",
+       "share": 0.1,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      16,
+      18,
+      20,
+      24,
+      36
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Inter-b680a9382208a09f",
+      "size": 16,
+      "leading": 1.63,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.7
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 36,
+      "vw": 9.2,
+      "font": "Newsreader-cbc23bb3cb13a7f6",
+      "text": "Tech Lead → Growth Engineer"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f3f0",
+     "bodyBgHsl": {
+      "h": 60,
+      "s": 0.11,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#141310",
+       "top": 4988,
+       "hsl": {
+        "h": 45,
+        "s": 0.11,
+        "l": 0.07
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#141310",
+       "share": 0.96
+      },
+      {
+       "color": "#f2f2f0",
+       "share": 0.02
+      },
+      {
+       "color": "#f3f3f0",
+       "share": 0.01
+      },
+      {
+       "color": "#5c584f",
+       "share": 0
+      },
+      {
+       "color": "#1f5c52",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#141310",
+      "hsl": {
+       "h": 45,
+       "s": 0.11,
+       "l": 0.07
+      },
+      "fg": "#f3f3f0"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Get in touch"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": null,
+    "fontsLoaded": [
+     "newsreader-cbc23bb3cb13a7f6",
+     "inter-b680a9382208a09f"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5393,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 80,
+      "height": 356,
+      "words": 44,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Tech Lead → Growth Engineer",
+       "size": 36,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 52,
+      "textLeft": 24,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 532,
+      "height": 579,
+      "words": 108,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "About",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 1206,
+      "height": 438,
+      "words": 70,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Experience",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 1740,
+      "height": 2252,
+      "words": 411,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Selected Work",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.mb-24",
+      "tag": "section",
+      "top": 4088,
+      "height": 724,
+      "words": 143,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Personal Builds",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.bg-ink.text-paper",
+      "tag": "section",
+      "top": 4988,
+      "height": 405,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Let's talk.",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 52,
+      "textLeft": 24,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 4812,
+      "height": 276
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Tech Lead → Growth Engineer",
+      "size": 36,
+      "top": 80,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 33
+     }
+    ],
+    "leftBlocks": 33,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "few-pictures",
+   "width": 1440,
+   "message": "Only 0 picture(s) on the page (0 photographs, footage or raster images, 0 interface fragments). Drawings in SVG do not count.",
+   "fix": "Find real pictures of the subject's world with scripts/assets.mjs (photographs, archival images, maps, engravings, footage), download them to assets/ and give them room: a hero picture, one per section that has a subject, a full-width band. At least four, usually six to twelve."
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 0 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "empty-screens",
+   "width": 1440,
+   "message": "2 of 5 desktop screens are almost empty ground (under 20% of the screen holds text, a picture or a colour field): screens 1, 2.",
+   "fix": "An empty screen is a rest only once per page. Elsewhere it means the section is underbuilt: set its content larger, give it the full information, put it on a colour field, or cut it."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/dani/repos/portfolio/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/home/dani/repos/portfolio/.taste-skill/inspect/desktop-page-01.jpg",
+    "/home/dani/repos/portfolio/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/dani/repos/portfolio/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/home/dani/repos/portfolio/.taste-skill/inspect/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/dani/repos/portfolio/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/home/dani/repos/portfolio/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

@@ -55,79 +55,84 @@ const personalBuilds = [
 <Layout>
   <main class="mx-auto max-w-2xl px-6 py-20 sm:py-28">
     <!-- HERO -->
-    <section class="mb-20">
-      <p class="font-sans text-xs uppercase tracking-widest text-muted mb-4">Daniel Barría</p>
-      <h1 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">
-        Tech Lead building toward Growth Engineering
+    <section class="mb-24">
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl leading-[0.95] tracking-tight mb-8">
+        Tech Lead → Growth Engineer
       </h1>
-      <p class="text-lg text-muted leading-relaxed max-w-xl">
-        I build full-stack systems for devtools & AI startups — backend infrastructure, AI pipelines, and the growth instrumentation that turns a site into a system teams can measure and ship on.
+      <p class="text-lg sm:text-xl leading-relaxed max-w-xl mb-8">
+        I'm Daniel Barría. I build full-stack systems for devtools & AI startups — backend infrastructure, AI pipelines, and the growth instrumentation that turns a site into a system teams can measure and ship on.
       </p>
-      <div class="mt-8 flex gap-6 font-sans text-sm">
-        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent hover:underline">LinkedIn</a>
-        <a href="#contact" class="text-accent hover:underline">Contact</a>
+      <div class="flex flex-wrap items-center gap-5">
+        <a
+          href="mailto:barriareyesjosedaniel@gmail.com?subject=Let%27s%20talk%20%E2%80%94%20via%20your%20portfolio"
+          class="inline-flex items-center justify-center bg-ink text-paper px-6 py-3 text-base font-medium hover:bg-accent transition-colors"
+        >
+          Get in touch
+        </a>
+        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent text-base hover:underline">LinkedIn</a>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="mb-20">
-      <p class="font-sans text-xs uppercase tracking-widest text-muted mb-5">About</p>
-      <p class="text-base leading-relaxed max-w-xl">
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-5">About</h2>
+      <p class="text-lg leading-relaxed max-w-xl">
         I'm a Tech Lead at Litebox, where I've spent 6 years leading full-stack web platform and growth engineering for devtools and AI companies — MotherDuck, CodSpeed, Ampersand, and ~10 other client accounts since 2023. I've built backend services end-to-end (NestJS, MongoDB, BigQuery, Spring Boot), shipped a Python/AI pipeline, and led growth instrumentation across a dozen production sites. I think of myself as an engineer rather than a programmer: I move across stacks as needed — Node, Python, Java, Go — and increasingly, I bring that experience to bear curating and reviewing AI-generated code, not just writing my own.
       </p>
     </section>
 
     <!-- EXPERIENCE -->
-    <section class="mb-20">
-      <p class="font-sans text-xs uppercase tracking-widest text-muted mb-5">Experience</p>
-      <div class="border-t border-line pt-5">
-        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 mb-2">
-          <h3 class="font-serif text-xl">Tech Lead — Litebox</h3>
-          <span class="font-sans text-xs uppercase tracking-wide text-muted">2020 — Present</span>
-        </div>
-        <p class="text-muted leading-relaxed max-w-xl">
-          Leading full-stack web platform engineering for devtools & AI startups. Technical Leader for MotherDuck (since 2023, the agency's largest account) and Ampersand; technical support for CodSpeed. Led ~10 client engagements since 2023 spanning frontend, backend, infra, and growth. Also run technical hiring assessments and AI-assisted performance reviews for the engineering team.
-        </p>
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-5">Experience</h2>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 mb-2">
+        <h3 class="font-serif text-xl">Tech Lead — Litebox</h3>
+        <span class="text-base text-muted">2020 — Present</span>
       </div>
+      <p class="text-lg text-ink leading-relaxed max-w-xl">
+        Leading full-stack web platform engineering for devtools & AI startups. Technical Leader for MotherDuck (since 2023, the agency's largest account) and Ampersand; technical support for CodSpeed. Led ~10 client engagements since 2023 spanning frontend, backend, infra, and growth. Also run technical hiring assessments and AI-assisted performance reviews for the engineering team.
+      </p>
     </section>
 
     <!-- SELECTED WORK -->
-    <section class="mb-20">
-      <p class="font-sans text-xs uppercase tracking-widest text-muted mb-5">Selected Work</p>
-      <div class="flex flex-col divide-y divide-line border-t border-line">
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-8">Selected Work</h2>
+      <div class="flex flex-col gap-10">
         {selectedWork.map((item) => (
-          <div class="py-5">
-            <h3 class="font-serif text-lg mb-1.5">{item.title}</h3>
-            <p class="text-muted leading-relaxed max-w-xl text-sm">{item.body}</p>
+          <div>
+            <h3 class="font-serif text-xl mb-2">{item.title}</h3>
+            <p class="text-ink leading-relaxed max-w-xl text-base">{item.body}</p>
           </div>
         ))}
       </div>
     </section>
 
     <!-- PERSONAL BUILDS -->
-    <section class="mb-20">
-      <p class="font-sans text-xs uppercase tracking-widest text-muted mb-5">Personal Builds</p>
-      <div class="flex flex-col divide-y divide-line border-t border-line">
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-8">Personal Builds</h2>
+      <div class="flex flex-col gap-10">
         {personalBuilds.map((item) => (
-          <div class="py-5">
-            <h3 class="font-serif text-lg mb-1.5">{item.title}</h3>
-            <p class="text-muted leading-relaxed max-w-xl text-sm">{item.body}</p>
+          <div>
+            <h3 class="font-serif text-xl mb-2">{item.title}</h3>
+            <p class="text-ink leading-relaxed max-w-xl text-base">{item.body}</p>
           </div>
         ))}
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="pt-4 border-t border-line">
-      <p class="font-sans text-xs uppercase tracking-widest text-muted mb-5">Contact</p>
-      <p class="text-base leading-relaxed max-w-xl mb-6">
+  </main>
+
+  <!-- CONTACT (dark colour-field close) -->
+  <section id="contact" class="bg-ink text-paper">
+    <div class="mx-auto max-w-2xl px-6 py-24">
+      <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">Let's talk.</h2>
+      <p class="text-lg leading-relaxed max-w-xl mb-8 text-paper/80">
         Open to growth engineering and full-stack platform leadership roles at devtools & AI startups.
       </p>
-      <div class="flex flex-wrap gap-6 font-sans text-sm">
-        <a href="mailto:barriareyesjosedaniel@gmail.com?subject=Let%27s%20talk%20%E2%80%94%20via%20your%20portfolio" class="text-accent hover:underline">Email</a>
-        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent hover:underline">LinkedIn</a>
-        <a href="https://danibarria.com.ar" class="text-accent hover:underline">danibarria.com.ar</a>
+      <div class="flex flex-wrap gap-6 text-base">
+        <a href="mailto:barriareyesjosedaniel@gmail.com?subject=Let%27s%20talk%20%E2%80%94%20via%20your%20portfolio" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">Email</a>
+        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">LinkedIn</a>
+        <a href="https://danibarria.com.ar" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">danibarria.com.ar</a>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 </Layout>
