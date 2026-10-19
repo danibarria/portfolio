@@ -8,8 +8,35 @@ interface Props {
 
 const {
   title = 'Daniel Barría — Tech Lead building toward Growth Engineering',
-  description = 'Tech Lead at Litebox leading full-stack web platform and growth engineering for devtools & AI startups.',
+  description = 'Tech Lead at Litebox leading full-stack web platform and growth engineering for devtools & AI startups. Full-stack engineering, AI pipelines, and growth instrumentation.',
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://danibarria.com.ar');
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Daniel Barría',
+  alternateName: 'Dani Barría',
+  url: 'https://danibarria.com.ar',
+  jobTitle: 'Tech Lead',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'Litebox',
+    url: 'https://litebox.ai',
+  },
+  description,
+  sameAs: ['http://linkedin.com/in/danibarria', 'https://github.com/danibarria'],
+  knowsAbout: [
+    'Growth Engineering',
+    'Full-Stack Web Development',
+    'Next.js',
+    'NestJS',
+    'AI Tooling',
+    'SEO',
+    'Technical Leadership',
+  ],
+};
 ---
 
 <!doctype html>
@@ -18,8 +45,27 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="description" content={description} />
+    <meta name="author" content="Daniel Barría" />
+    <meta name="robots" content="index, follow" />
     <title>{title}</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="Daniel Barría" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <!-- Structured data for AI answer engines / search (AEO / GEO) -->
+    <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
   </head>
   <body class="bg-paper text-ink font-sans antialiased">
     <slot />
