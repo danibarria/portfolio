@@ -1,0 +1,144 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const selectedWork = [
+  {
+    title: 'MotherDuck — Pipeline de Video con IA',
+    body: 'Construí un pipeline automatizado que toma los videos subidos a YouTube de MotherDuck, los transcribe con OpenAI Whisper, traduce las transcripciones y las publica directo en Strapi — todo en Python. Eliminó un paso totalmente manual del flujo de contenido.',
+  },
+  {
+    title: 'MotherDuck — Campaña de Seguridad de Dependencias',
+    body: 'Reduje los advisories de seguridad de 317 a 124 (cero críticos) en todo el monorepo, sin regresiones. También construí un link checker de Strapi que detectó 264 links rotos reales y bajó el tiempo de chequeo de 4 minutos a 33 segundos.',
+  },
+  {
+    title: 'Ampersand — Relanzamiento del Sitio',
+    body: 'Lancé ampersand.ai de punta a punta como ingeniero principal del rebuild en Astro — PostHog y GTM instrumentados con un baseline previo al lanzamiento, más el barrido final de QA de todo el sitio. Respaldé la estimación de la Fase 2 con velocidad medida, y logré que el 71% de las URLs legacy redirigieran 1:1 a la nueva documentación.',
+  },
+  {
+    title: 'CodSpeed — Homepage v2 & SEO',
+    body: 'Lideré el rebuild en Next.js App Router y me encargué de SEO, GEO y AEO: OG images dinámicos, sitemap, robots y datos estructurados para visibilidad ante crawlers de IA.',
+  },
+  {
+    title: 'LiteDesigner — Kickoff de Tooling con IA',
+    body: 'Arranqué un servidor MCP interno para que el equipo de diseño de Litebox capture y reutilice referencias de sitios web, directo desde Claude. Construí el backend, la autenticación y un frontend 0.1 funcional con el flujo core: Next.js, Neon/Drizzle, Better Auth y un worker en AWS para captura automatizada de sitios. Hoy en desarrollo activo, con el equipo construyendo sobre esa base — incluyendo el code review que sigo haciendo sobre los PRs que entran.',
+  },
+  {
+    title: 'imetriq — Plataforma de Métricas (liderada desde backend)',
+    body: 'Constructor principal de una plataforma de métricas y alertas publicitarias: una app en Next.js más un servicio interno en NestJS que consulta BigQuery y MongoDB, deployado vía Docker a AWS. Fui dueño del producto y de su infraestructura de build/deploy de punta a punta.',
+  },
+  {
+    title: 'DrLullaby — Full-Stack en Tres Lenguajes',
+    body: 'Full-stack + DevOps en una plataforma de salud del sueño: features en un frontend Vue 2, un backend NestJS y un servicio legacy en Spring Boot (Java) — más CI/CD a EC2 y migración de secretos a AWS Secrets Manager. Un solo proyecto, tres stacks distintos.',
+  },
+  {
+    title: 'Time Tracking Bot — Automatización Interna',
+    body: 'Construí una herramienta interna basada en Slack usada por toda la agencia: formularios interactivos que cargan registros de horas en Runn, con integración de calendario. Backend en NestJS, dockerizado y deployado en AWS ECS Fargate vía CI/CD.',
+  },
+  {
+    title: 'SEO Crawler (Go) — Supervisión Técnica',
+    body: 'Code review continuo y criterio técnico sobre un servicio crawler de SEO escrito en Go — revisando PRs entrantes, marcando edge cases y manteniendo la calidad en un codebase fuera de mi stack del día a día.',
+  },
+];
+
+const personalBuilds = [
+  {
+    title: 'Infraestructura Self-Hosted & Plataforma de IA',
+    body: 'Un homelab con 15+ servicios dockerizados — Home Assistant, Immich, Jellyfin, Syncthing, AdGuard Home, qBittorrent — detrás de un stack completo de observabilidad (Prometheus, Grafana, node_exporter, cAdvisor) y acceso remoto/público seguro vía Tailscale y Cloudflare Tunnel. También corre inferencia de IA local: modelos open-source servidos vía Ollama en una GPU dedicada (RTX 3060, 12GB VRAM), potenciando un agente de IA self-hosted de punta a punta.',
+  },
+  {
+    title: 'Segundo Cerebro con IA',
+    body: 'Un sistema personal de conocimiento: un vault de Obsidian poblado automáticamente desde 40+ repos, Slack y Notion, espejado a un agente self-hosted vía MCP. Un agente de IA basado en Telegram — corriendo en el mismo homelab, usando los modelos locales de Ollama de arriba — hace check-ins diarios contra ese vault, con acceso remoto seguro vía Tailscale. Un sistema personal AI-first de punta a punta, construido y operado en solitario.',
+  },
+];
+---
+
+<Layout
+  lang="es"
+  title="Daniel Barría — Tech Lead en camino a Growth Engineering"
+  description="Tech Lead en Litebox liderando ingeniería full-stack y growth engineering para startups de devtools e IA. Ingeniería full-stack, pipelines de IA e instrumentación de growth."
+  langSwitchHref="/"
+  langSwitchLabel="EN"
+>
+  <main class="mx-auto max-w-2xl px-6 py-20 sm:py-28">
+    <!-- HERO -->
+    <section class="mb-24">
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl leading-[0.95] tracking-tight mb-8">
+        Tech Lead → Growth Engineer
+      </h1>
+      <p class="text-lg sm:text-xl leading-relaxed max-w-xl mb-8">
+        Soy Daniel Barría. Construyo sistemas full-stack para startups de devtools e IA — infraestructura de backend, pipelines de IA y la instrumentación de growth que convierte un sitio en un sistema que los equipos pueden medir y sobre el cual construir.
+      </p>
+      <div class="flex flex-wrap items-center gap-5">
+        <a
+          href="mailto:barriareyesjosedaniel@gmail.com?subject=Hablemos%20%E2%80%94%20desde%20tu%20portfolio"
+          class="inline-flex items-center justify-center bg-ink text-paper px-6 py-3 text-base font-medium hover:bg-accent transition-colors"
+        >
+          Contactarme
+        </a>
+        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent text-base hover:underline">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-5">Sobre mí</h2>
+      <p class="text-lg leading-relaxed max-w-xl">
+        Soy Tech Lead en Litebox, donde llevo 6 años liderando ingeniería full-stack de plataformas web y growth engineering para empresas de devtools e IA — MotherDuck, CodSpeed, Ampersand y ~10 cuentas de clientes más desde 2023. Construí servicios de backend de punta a punta (NestJS, MongoDB, BigQuery, Spring Boot), lancé un pipeline de Python/IA y lideré instrumentación de growth en una docena de sitios en producción. Me pienso más como ingeniero que como programador: me muevo entre stacks según haga falta — Node, Python, Java, Go — y cada vez más, aplico esa experiencia a curar y revisar código generado por IA, no solo a escribir el mío.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-5">Experiencia Seleccionada</h2>
+      <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 mb-2">
+        <h3 class="font-serif text-xl">Tech Lead — Litebox</h3>
+        <span class="text-base text-muted">2020 — Presente</span>
+      </div>
+      <p class="text-lg text-ink leading-relaxed max-w-xl">
+        Lidero ingeniería full-stack de plataformas web para startups de devtools e IA. Líder técnico de MotherDuck (desde 2023, la cuenta más grande de la agencia) y Ampersand; soporte técnico para CodSpeed. Lideré ~10 proyectos de clientes desde 2023, abarcando frontend, backend, infraestructura y growth. También dirijo evaluaciones técnicas de contratación y performance reviews asistidas por IA para el equipo de ingeniería.
+      </p>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-8">Trabajo Seleccionado</h2>
+      <div class="flex flex-col gap-10">
+        {selectedWork.map((item) => (
+          <div>
+            <h3 class="font-serif text-xl mb-2">{item.title}</h3>
+            <p class="text-ink leading-relaxed max-w-xl text-base">{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- PERSONAL BUILDS -->
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-8">Proyectos Personales</h2>
+      <div class="flex flex-col gap-10">
+        {personalBuilds.map((item) => (
+          <div>
+            <h3 class="font-serif text-xl mb-2">{item.title}</h3>
+            <p class="text-ink leading-relaxed max-w-xl text-base">{item.body}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CONTACT (dark colour-field close) -->
+  <section id="contact" class="bg-ink text-paper">
+    <div class="mx-auto max-w-2xl px-6 py-24">
+      <h2 class="font-serif text-4xl sm:text-5xl leading-tight mb-6">Hablemos.</h2>
+      <p class="text-lg leading-relaxed max-w-xl mb-8 text-paper/80">
+        Abierto a roles de growth engineering y liderazgo de plataformas full-stack en startups de devtools e IA.
+      </p>
+      <div class="flex flex-wrap gap-6 text-base">
+        <a href="mailto:barriareyesjosedaniel@gmail.com?subject=Hablemos%20%E2%80%94%20desde%20tu%20portfolio" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">Email</a>
+        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">LinkedIn</a>
+        <a href="https://danibarria.com.ar" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">danibarria.com.ar</a>
+      </div>
+    </div>
+  </section>
+</Layout>

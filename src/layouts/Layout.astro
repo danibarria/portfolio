@@ -5,14 +5,23 @@ import { Font } from 'astro:assets';
 interface Props {
   title?: string;
   description?: string;
+  lang?: 'en' | 'es';
+  langSwitchHref?: string;
+  langSwitchLabel?: string;
 }
 
 const {
   title = 'Daniel Barría — Tech Lead building toward Growth Engineering',
   description = 'Tech Lead at Litebox leading full-stack web platform and growth engineering for devtools & AI startups. Full-stack engineering, AI pipelines, and growth instrumentation.',
+  lang = 'en',
+  langSwitchHref = '/es',
+  langSwitchLabel = 'ES',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://danibarria.com.ar');
+const baseOrigin = 'https://danibarria.com.ar';
+const enURL = new URL('/', baseOrigin);
+const esURL = new URL('/es', baseOrigin);
 
 const personJsonLd = {
   '@context': 'https://schema.org',
@@ -41,12 +50,15 @@ const personJsonLd = {
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="en" href={enURL} />
+    <link rel="alternate" hreflang="es" href={esURL} />
+    <link rel="alternate" hreflang="x-default" href={enURL} />
     <meta name="description" content={description} />
     <meta name="author" content="Daniel Barría" />
     <meta name="robots" content="index, follow" />
@@ -61,7 +73,7 @@ const personJsonLd = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="Daniel Barría" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={lang === 'es' ? 'es_AR' : 'en_US'} />
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary" />
@@ -72,6 +84,12 @@ const personJsonLd = {
     <script type="application/ld+json" set:html={JSON.stringify(personJsonLd)} />
   </head>
   <body class="bg-paper text-ink font-sans antialiased">
+    <a
+      href={langSwitchHref}
+      class="fixed top-5 right-5 sm:top-6 sm:right-6 z-10 font-sans text-xs font-semibold uppercase tracking-wide text-muted hover:text-ink transition-colors"
+    >
+      {langSwitchLabel}
+    </a>
     <slot />
   </body>
 </html>
