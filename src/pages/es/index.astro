@@ -8,7 +8,7 @@ const selectedWork = [
   },
   {
     title: 'MotherDuck — Campaña de Seguridad de Dependencias',
-    body: 'Reduje los advisories de seguridad de 317 a 124 (cero críticos) en todo el monorepo, sin regresiones. También construí un link checker de Strapi que detectó 264 links rotos reales y bajó el tiempo de chequeo de 4 minutos a 33 segundos.',
+    body: 'Reduje los advisories de seguridad de 317 a 124, llevando las vulnerabilidades críticas y altas a cero, en todo el monorepo y sin regresiones. También construí un link checker de Strapi que detectó 264 links rotos reales y bajó el tiempo de chequeo de 4 minutos a 33 segundos.',
   },
   {
     title: 'Ampersand — Relanzamiento del Sitio',
@@ -24,18 +24,14 @@ const selectedWork = [
   },
   {
     title: 'imetriq — Plataforma de Métricas (liderada desde backend)',
-    body: 'Constructor principal de una plataforma de métricas y alertas publicitarias: una app en Next.js más un servicio interno en NestJS que consulta BigQuery y MongoDB, deployado vía Docker a AWS. Fui dueño del producto y de su infraestructura de build/deploy de punta a punta.',
+    body: 'Desarrollador principal de una plataforma de métricas y alertas publicitarias: una app en Next.js más un servicio interno en NestJS que consulta BigQuery y MongoDB, deployado vía Docker a AWS. Fui dueño del producto y de su infraestructura de build/deploy de punta a punta.',
   },
   {
-    title: 'DrLullaby — Full-Stack en Tres Lenguajes',
+    title: 'DrLullaby — Full-Stack',
     body: 'Full-stack + DevOps en una plataforma de salud del sueño: features en un frontend Vue 2, un backend NestJS y un servicio legacy en Spring Boot (Java) — más CI/CD a EC2 y migración de secretos a AWS Secrets Manager. Un solo proyecto, tres stacks distintos.',
   },
   {
-    title: 'Time Tracking Bot — Automatización Interna',
-    body: 'Construí una herramienta interna basada en Slack usada por toda la agencia: formularios interactivos que cargan registros de horas en Runn, con integración de calendario. Backend en NestJS, dockerizado y deployado en AWS ECS Fargate vía CI/CD.',
-  },
-  {
-    title: 'SEO Crawler (Go) — Supervisión Técnica',
+    title: 'SEO Crawler — Supervisión Técnica',
     body: 'Code review continuo y criterio técnico sobre un servicio crawler de SEO escrito en Go — revisando PRs entrantes, marcando edge cases y manteniendo la calidad en un codebase fuera de mi stack del día a día.',
   },
 ];
@@ -47,7 +43,7 @@ const personalBuilds = [
   },
   {
     title: 'Segundo Cerebro con IA',
-    body: 'Un sistema personal de conocimiento: un vault de Obsidian poblado automáticamente desde 40+ repos, Slack y Notion, espejado a un agente self-hosted vía MCP. Un agente de IA basado en Telegram — corriendo en el mismo homelab, usando los modelos locales de Ollama de arriba — hace check-ins diarios contra ese vault, con acceso remoto seguro vía Tailscale. Un sistema personal AI-first de punta a punta, construido y operado en solitario.',
+    body: 'Un sistema personal de conocimiento: un vault de Obsidian poblado automáticamente desde 40+ repos, Slack y Notion, espejado a un agente self-hosted vía MCP. Un agente de IA basado en Telegram — corriendo en el mismo homelab, usando los modelos locales de Ollama — hace check-ins diarios contra ese vault, con acceso remoto seguro vía Tailscale. Un sistema personal AI-first de punta a punta, construido y operado en solitario.',
   },
 ];
 ---
@@ -83,7 +79,7 @@ const personalBuilds = [
     <section class="mb-24">
       <h2 class="font-serif text-2xl mb-5">Sobre mí</h2>
       <p class="text-lg leading-relaxed max-w-xl">
-        Soy Tech Lead en Litebox, donde llevo 6 años liderando ingeniería full-stack de plataformas web y growth engineering para empresas de devtools e IA — MotherDuck, CodSpeed, Ampersand y ~10 cuentas de clientes más desde 2023. Construí servicios de backend de punta a punta (NestJS, MongoDB, BigQuery, Spring Boot), lancé un pipeline de Python/IA y lideré instrumentación de growth en una docena de sitios en producción. Me pienso más como ingeniero que como programador: me muevo entre stacks según haga falta — Node, Python, Java, Go — y cada vez más, aplico esa experiencia a curar y revisar código generado por IA, no solo a escribir el mío.
+        Soy Tech Lead en Litebox, donde llevo 6 años liderando equipos de ingeniería full-stack de plataformas web y growth engineering para empresas de devtools e IA — MotherDuck, CodSpeed, Ampersand y ~10 cuentas de clientes más desde 2023. Construí servicios de backend de punta a punta (NestJS, MongoDB, BigQuery, Spring Boot), lancé un pipeline de Python/IA y lideré instrumentación de growth en una docena de sitios en producción. Me pienso más como ingeniero que como programador: me muevo entre stacks según haga falta — Node, Python, Java, Go — y cada vez más, aplico esa experiencia a curar y revisar código generado por IA, no solo a escribir el mío.
       </p>
     </section>
 
@@ -95,7 +91,7 @@ const personalBuilds = [
         <span class="text-base text-muted">2020 — Presente</span>
       </div>
       <p class="text-lg text-ink leading-relaxed max-w-xl">
-        Lidero ingeniería full-stack de plataformas web para startups de devtools e IA. Líder técnico de MotherDuck (desde 2023, la cuenta más grande de la agencia) y Ampersand; soporte técnico para CodSpeed. Lideré ~10 proyectos de clientes desde 2023, abarcando frontend, backend, infraestructura y growth. También dirijo evaluaciones técnicas de contratación y performance reviews asistidas por IA para el equipo de ingeniería.
+        Lidero equipos de ingeniería full-stack de plataformas web para startups de devtools e IA. Líder técnico de MotherDuck (desde 2023, la cuenta más grande de la agencia) y Ampersand; soporte técnico para CodSpeed. Lideré ~10 proyectos de clientes desde 2023, abarcando frontend, backend, infraestructura y growth. También dirijo evaluaciones técnicas de contratación y performance reviews asistidas por IA para el equipo de ingeniería.
       </p>
     </section>
 
