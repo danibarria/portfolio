@@ -15,7 +15,7 @@ const {
   title = 'Daniel Barría — Tech Lead building toward Growth Engineering',
   description = 'Tech Lead at Litebox leading full-stack web platform and growth engineering for devtools & AI startups. Full-stack engineering, AI pipelines, and growth instrumentation.',
   lang = 'en',
-  langSwitchHref = '/es',
+  langSwitchHref = '/es/',
   langSwitchLabel = 'ES',
   faqs = [],
 } = Astro.props;
@@ -23,11 +23,12 @@ const {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://danibarria.com.ar');
 const baseOrigin = 'https://danibarria.com.ar';
 const enURL = new URL('/', baseOrigin);
-const esURL = new URL('/es', baseOrigin);
+const esURL = new URL('/es/', baseOrigin);
 
 const personJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': 'https://danibarria.com.ar/#person',
   name: 'Daniel Barría',
   alternateName: 'Dani Barría',
   url: 'https://danibarria.com.ar',
@@ -53,7 +54,8 @@ const personJsonLd = {
   makesOffer: {
     '@type': 'Offer',
     name: 'Asesoría 1 a 1 en IA para profesionales',
-    url: 'https://asesoria.danibarria.com.ar',
+    url: 'https://asesoria.danibarria.com.ar/',
+    itemOffered: { '@id': 'https://asesoria.danibarria.com.ar/#service' },
   },
 };
 

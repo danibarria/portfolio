@@ -1,12 +1,12 @@
 # Daniel Barría
 
-> Tech Lead at Litebox (since 2020) leading full-stack web platform and growth engineering for devtools & AI startups (MotherDuck, CodSpeed, Ampersand). Based in Buenos Aires, Argentina. Open to growth engineering and full-stack platform leadership roles. Also offers 1:1 AI sessions for professionals (in Spanish).
+> Tech Lead at Litebox (since 2020) leading full-stack web platform and growth engineering for devtools & AI startups (MotherDuck, CodSpeed, Ampersand). Based in Buenos Aires, Argentina. Open to growth engineering and full-stack platform leadership roles. Also offers 1:1 AI advisory for professionals (in Spanish).
 
 ## Pages
 - https://danibarria.com.ar/ — portfolio (English): about, experience, selected work, personal builds, FAQ, contact.
-- https://danibarria.com.ar/es — portfolio en español.
+- https://danibarria.com.ar/es/ — portfolio en español.
 - https://asesoria.danibarria.com.ar/ — asesoría 1 a 1 en IA para profesionales (español): cómo funciona, precio, FAQ.
-- https://asesoria.danibarria.com.ar/casos/ingenieria — caso real: IA aplicada a ingeniería civil (cómputo de obra de 2-3 días en 15 minutos).
+- https://asesoria.danibarria.com.ar/casos/ingenieria/ — caso real: IA aplicada a ingeniería civil (cómputo de obra de 2-3 días en 15 minutos).
 
 ## Selected work
 - MotherDuck: AI video pipeline (YouTube → Whisper → translation → Strapi, Python); dependency security campaign (critical/high vulns to zero); Strapi link checker (264 broken links, 4 min → 33 s).
