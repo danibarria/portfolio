@@ -69,6 +69,12 @@ const faqs = [
     a: "Por email a barriareyesjosedaniel@gmail.com o por LinkedIn (linkedin.com/in/danibarria).",
   },
 ];
+
+const linkify = (text: string) =>
+  text
+    .replace('asesoria.danibarria.com.ar', '<a href="https://asesoria.danibarria.com.ar" target="_blank" rel="noopener" class="text-accent underline decoration-accent/30 hover:decoration-accent underline-offset-4">asesoria.danibarria.com.ar</a>')
+    .replace('barriareyesjosedaniel@gmail.com', '<a href="mailto:barriareyesjosedaniel@gmail.com" class="text-accent underline decoration-accent/30 hover:decoration-accent underline-offset-4">barriareyesjosedaniel@gmail.com</a>')
+    .replace('linkedin.com/in/danibarria', '<a href="https://www.linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent underline decoration-accent/30 hover:decoration-accent underline-offset-4">linkedin.com/in/danibarria</a>');
 ---
 
 <Layout
@@ -152,7 +158,7 @@ const faqs = [
         {faqs.map((item) => (
           <div>
             <h3 class="font-serif text-lg mb-2">{item.q}</h3>
-            <p class="text-base text-muted leading-relaxed max-w-xl">{item.a}</p>
+            <p class="text-base text-muted leading-relaxed max-w-xl" set:html={linkify(item.a)} />
           </div>
         ))}
       </div>
