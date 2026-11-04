@@ -46,9 +46,32 @@ const personalBuilds = [
     body: 'A personal knowledge system: an Obsidian vault auto-populated from 40+ repos, Slack, and Notion, mirrored to a self-hosted agent via MCP. A Telegram-based AI agent — running on the same homelab, using the local Ollama models — runs daily check-ins against it, with secure remote access via Tailscale. An end-to-end personal AI-first system, built and operated solo.',
   },
 ];
+
+const faqs = [
+  {
+    q: "Who is Daniel Barría?",
+    a: "Tech Lead at Litebox since 2020, leading full-stack web platform and growth engineering teams for devtools & AI startups such as MotherDuck, CodSpeed and Ampersand.",
+  },
+  {
+    q: "What technologies does he work with?",
+    a: "Next.js, Astro, NestJS, Node, Python, Java (Spring Boot) and Go; MongoDB, BigQuery and Postgres (Neon/Drizzle); AWS and Docker; AI pipelines (OpenAI Whisper, MCP, Claude) and growth instrumentation with PostHog and GTM.",
+  },
+  {
+    q: "What roles is he open to?",
+    a: "Growth engineering and full-stack platform leadership roles at devtools & AI startups.",
+  },
+  {
+    q: "Does he offer AI coaching?",
+    a: "Yes. He offers 1:1 AI sessions for professionals who want to apply AI to their real work, in Spanish. More at asesoria.danibarria.com.ar.",
+  },
+  {
+    q: "How can I contact him?",
+    a: "By email at barriareyesjosedaniel@gmail.com or on LinkedIn (linkedin.com/in/danibarria).",
+  },
+];
 ---
 
-<Layout>
+<Layout faqs={faqs}>
   <main class="mx-auto max-w-2xl px-6 py-20 sm:py-28">
     <!-- HERO -->
     <section class="mb-24">
@@ -65,7 +88,7 @@ const personalBuilds = [
         >
           Get in touch
         </a>
-        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent text-base hover:underline">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/danibarria" target="_blank" rel="noopener" class="text-accent text-base hover:underline">LinkedIn</a>
       </div>
     </section>
 
@@ -115,6 +138,19 @@ const personalBuilds = [
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="mb-24">
+      <h2 class="font-serif text-2xl mb-8">FAQ</h2>
+      <div class="flex flex-col gap-8">
+        {faqs.map((item) => (
+          <div>
+            <h3 class="font-serif text-lg mb-2">{item.q}</h3>
+            <p class="text-base text-muted leading-relaxed max-w-xl">{item.a}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
   </main>
 
   <!-- CONTACT (dark colour-field close) -->
@@ -126,9 +162,16 @@ const personalBuilds = [
       </p>
       <div class="flex flex-wrap gap-6 text-base">
         <a href="mailto:barriareyesjosedaniel@gmail.com?subject=Let%27s%20talk%20%E2%80%94%20via%20your%20portfolio" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">Email</a>
-        <a href="http://linkedin.com/in/danibarria" target="_blank" rel="noopener" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">LinkedIn</a>
-        <a href="https://danibarria.com.ar" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">danibarria.com.ar</a>
+        <a href="https://www.linkedin.com/in/danibarria" target="_blank" rel="noopener" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">LinkedIn</a>
+        <a href="https://asesoria.danibarria.com.ar" target="_blank" rel="noopener" class="underline decoration-paper/30 hover:decoration-paper underline-offset-4">AI coaching (in Spanish)</a>
       </div>
     </div>
   </section>
+
+  <footer class="bg-ink text-paper/70 border-t border-paper/10">
+    <div class="mx-auto max-w-2xl px-6 py-8 flex flex-wrap items-center justify-between gap-4 text-sm">
+      <p>© {new Date().getFullYear()} Daniel Barría · Buenos Aires, Argentina</p>
+      <a href="mailto:barriareyesjosedaniel@gmail.com" class="underline decoration-paper/30 hover:decoration-paper hover:text-paper underline-offset-4">barriareyesjosedaniel@gmail.com</a>
+    </div>
+  </footer>
 </Layout>
