@@ -1,6 +1,6 @@
 # Daniel Barría
 
-> Tech Lead at Litebox (since 2020) leading full-stack web platform and growth engineering for devtools & AI startups (MotherDuck, CodSpeed, Ampersand). Based in Buenos Aires, Argentina. Open to growth engineering and full-stack platform leadership roles. Also offers 1:1 AI advisory for professionals (in Spanish).
+> Tech Lead at Litebox (since 2020) leading full-stack web platform engineering for devtools & AI startups (MotherDuck, CodSpeed, Ampersand), moving into AI engineering (AI pipelines, agent tooling, LLM-based workflows). Based in Buenos Aires, Argentina. Open to AI engineering and full-stack platform leadership roles. Also offers 1:1 AI advisory for professionals (in Spanish).
 
 ## Pages
 - https://danibarria.com.ar/ — portfolio (English): about, experience, selected work, personal builds, FAQ, contact.
@@ -17,7 +17,7 @@
 - DrLullaby: full-stack + DevOps across Vue 2, NestJS and Spring Boot.
 
 ## Skills
-Growth Engineering, Full-Stack Web Development, Next.js, Astro, NestJS, Python, Java, Go, AWS, Docker, AI tooling (MCP, Claude, Whisper), SEO/AEO/GEO, technical leadership.
+AI Engineering, Full-Stack Web Development, Next.js, Astro, NestJS, Python, Java, Go, AWS, Docker, AI tooling (MCP, Claude, Whisper), SEO/AEO/GEO, technical leadership.
 
 ## Contact
 - Email: barriareyesjosedaniel@gmail.com
